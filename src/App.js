@@ -9,6 +9,9 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Project from './components/Projects/Project';
+import '../node_modules/@fortawesome/fontawesome-free/js/brands.js';
+import '../node_modules/@fortawesome/fontawesome-free/js/regular.js';
+import '../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js';
 
 function App() {
   return (
