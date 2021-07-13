@@ -1,5 +1,4 @@
 import React from 'react';
-import './Menu.css';
 import {
     BrowserRouter as Router,
     Link
@@ -9,7 +8,7 @@ function Header() {
     return (
         <Router>
             <header>
-                <div className="titleFont">
+                <div className="alternativeFont">
                     <ul className="headerLinkList">
                         <li className="menuLink"><Link to="/">Home</Link></li>
                         <li className="menuLink"><Link to="/about">Who am I?</Link></li>

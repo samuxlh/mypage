@@ -19,6 +19,15 @@ body {
     overflow: hidden;
 }
 
+.defaultContainer {
+    width: 80%;
+    height: 70vh;
+    margin: 3em auto;
+    padding: 1em;
+    border: var(--purple) solid 1px;
+    border-radius: 5px;
+}
+
 
 /* 1.1 Fonts/Text Formatting */
 
@@ -29,6 +38,11 @@ body {
 
 .textFont {
     font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+.alternativeFont {
+    font-family: 'Work Sans', sans-serif;
     color: var(--white);
 }
 
