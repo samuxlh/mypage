@@ -1,0 +1,90 @@
+/* Color Schemes Definition */
+
+:root {
+    --white: #EDEDED;
+    --black: #171717;
+    --grey: #C4C4C4;
+    --purple: #A239EA;
+}
+
+
+/* 1. General Definitions */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* 1.1 Fonts/Text Formatting */
+
+.titleFont {
+    font-family: 'Yantramanav', sans-serif;
+    color: var(--white);
+}
+
+.textFont {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* 1.2 Backgrounds */
+
+body {
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Menu Formatting */
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: static;
+    top: 0px;
+    margin: 0 auto;
+}
+
+.headerLinkList {
+    display: flex;
+    justify-content: center;
+    letter-spacing: .1em;
+}
+
+.menuLink {
+    margin: 0 1em;
+}
+
+.menuLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--white);
+    transition: width .7s;
+}
+
+.menuLink:hover::after {
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    transition: width .7s;
+}
+
+
+/* Extras or imports */

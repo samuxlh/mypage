@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: static;
+    top: 0px;
+    margin: 0 auto;
+}
+
+.headerLinkList {
+    display: flex;
+    justify-content: center;
+    letter-spacing: .1em;
+}
+
+.menuLink {
+    margin: 0 1em;
+}
+
+.menuLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--white);
+    transition: width .7s;
+}
+
+.menuLink:hover::after {
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    transition: width .7s;
+}
