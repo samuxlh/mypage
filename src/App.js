@@ -14,15 +14,49 @@ import '../node_modules/@fortawesome/fontawesome-free/js/regular.js';
 import '../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js';
 
 function App() {
+
+  function setTabActive(active) {
+    const linkList = document.getElementsByClassName('ID001');
+    switch(active){
+      case 0:
+        linkList[0].classList.add('menuLink-active');
+        linkList[1].classList.remove('menuLink-active');
+        linkList[2].classList.remove('menuLink-active');
+        linkList[3].classList.remove('menuLink-active');
+        return null;
+      case 1:
+        linkList[1].classList.add('menuLink-active');
+        linkList[0].classList.remove('menuLink-active');
+        linkList[2].classList.remove('menuLink-active');
+        linkList[3].classList.remove('menuLink-active');
+        return null;
+      case 2:
+        linkList[2].classList.add('menuLink-active');
+        linkList[1].classList.remove('menuLink-active');
+        linkList[0].classList.remove('menuLink-active');
+        linkList[3].classList.remove('menuLink-active');
+        return null;
+      case 3:
+        linkList[3].classList.add('menuLink-active');
+        linkList[1].classList.remove('menuLink-active');
+        linkList[2].classList.remove('menuLink-active');
+        linkList[0].classList.remove('menuLink-active');
+        return null;
+      
+        default:
+        return null;
+    }
+  }
+
   return (
     <div className="App">
       <Router>
         <div className="alternativeFont">
           <ul className="headerLinkList">
-            <li className="menuLink"><Link to="/">Home</Link></li>
-            <li className="menuLink"><Link to="/about">Who am I?</Link></li>
-            <li className="menuLink"><Link to="/projects">My Projects</Link></li>
-            <li className="menuLink"><Link to="/contact">Wanna contact me?</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(0)}><Link className="ID001 menuLink-active" to="/">Home</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(1)}><Link className="ID001" to="/about">Who am I?</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(2)}><Link className="ID001" to="/projects">My Projects</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(3)}><Link className="ID001" to="/contact">Wanna contact me?</Link></li>
           </ul>
         </div>
         <main className="defaultContainer">

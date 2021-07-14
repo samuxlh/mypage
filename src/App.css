@@ -12,11 +12,11 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: max-content;
 }
 
 .defaultContainer {
@@ -26,6 +26,7 @@ body {
     padding: 1em;
     border: var(--purple) solid 1px;
     border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .alignCenter {
@@ -38,16 +39,19 @@ body {
 
 .titleFont {
     font-family: 'Yantramanav', sans-serif;
+    letter-spacing: 0.1em;
     color: var(--white);
 }
 
 .textFont {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
     color: var(--white);
 }
 
 .alternativeFont {
     font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.1em;
     color: var(--white);
 }
 
@@ -62,7 +66,7 @@ a {
 body {
     padding: 0;
     background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./img/background.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -95,14 +99,21 @@ header {
     width: 0;
     height: 1px;
     background: var(--white);
-    transition: width .7s;
+    transition: width .1s;
 }
 
 .menuLink:hover::after {
     width: 100%;
     height: 1px;
     background: var(--white);
+    transition: width .1s;
+}
+
+.menuLink-active {
+    width: 100%;
+    height: 1px;
     transition: width .7s;
+    border-bottom: 1px solid var(--white);
 }
 
 

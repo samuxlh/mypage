@@ -1,0 +1,4 @@
+.ProjectBoard {
+    display: flex;
+    flex-wrap: wrap;
+}
