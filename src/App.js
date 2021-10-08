@@ -48,18 +48,18 @@ function App() {
     }
   }
 
-  function syncHeaderURL(){
-  const pageURL = window.location.href;
-  if (pageURL.includes('about')) {
-    setTabActive(1);
-  } else if (pageURL.includes('projects')) {
-    setTabActive(2);
-  } else if (pageURL.includes('contact')) {
-    setTabActive(3);
-  } else {
-    setTabActive(0);
-  }
-  }
+  // function syncHeaderURL(){
+  // const pageURL = window.location.href;
+  // if (pageURL.includes('about')) {
+  //   setTabActive(1);
+  // } else if (pageURL.includes('projects')) {
+  //   setTabActive(2);
+  // } else if (pageURL.includes('contact')) {
+  //   setTabActive(3);
+  // } else {
+  //   setTabActive(0);
+  // }
+  // }
 
   return (
     <div className="App">
