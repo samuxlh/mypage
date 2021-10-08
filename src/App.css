@@ -130,5 +130,21 @@ header {
     text-align: center;
 }
 
+@media screen and (max-width: 1280px) {
+    .headerLinkList {
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+    .socialBox {
+        margin: 2em;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
 
 /* Extras or imports */
