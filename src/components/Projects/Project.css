@@ -2,3 +2,22 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.ProjectBoard {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ProjectRoot {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, .9), rgba(0, 0, 0, .4));
+}
+
+.notFound {
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    width: 450px;
+    height: fit-content;
+    height: -moz-fit-content;
+}

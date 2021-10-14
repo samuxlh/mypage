@@ -1,15 +1,14 @@
 import React from 'react';
 import "./Home.css"
-
+import Typist from 'react-typist';
 function Home() {
     return (
         <div>
             <span>
             <p className="textFont defaultText">Welcome to my page, my name is</p>
-            <h1 className="titleFont bigText">Samuel Santos</h1>
+            <h1 className="titleFont bigText"><Typist cursor={{ hideWhenDone: true }}>Samuel Santos</Typist></h1>
             <p className="textFont defaultText">But you can call me Sam if you want to.</p>
-            <p className="textFont defaultText">That guy on the picture right over there is me!! But if you want to know more about it
-            <br />make sure to check out the other pages up there on the navigation bar.</p>
+            <p className="textFont defaultText">I like games, cybersec, data science, Python, React. You can find my navigate using the bar on top...</p>
             </span>
         </div>
     )

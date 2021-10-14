@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import ParticlesBg from 'particles-bg'
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -63,6 +64,7 @@ function App() {
 
   return (
     <div className="App">
+      <ParticlesBg color="#A239EA" num={200} type="cobweb" bg={true} />
       <Router>
         <div className="alternativeFont">
           <ul className="headerLinkList">

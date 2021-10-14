@@ -11,7 +11,7 @@ function About() {
             <section className="textFont aboutText">
                 <h3 className="textAlignCenter titleFont bigText">Who am I?</h3>
                 <p className="textFont">
-                    I am a {age} years old Software Engineer graduate from Brazil! I like working mostly with Python in Machine Learning and React FrontEnd development.
+                    I am a {age} years old Software Engineer graduate from Brazil! I like working mostly with Python and React.
                 </p>
             </section>
             <section className="textFont ">
