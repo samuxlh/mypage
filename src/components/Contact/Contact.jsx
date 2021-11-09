@@ -10,6 +10,10 @@ function Contact() {
                     <a target="_blank" rel="noreferrer" href="https://github.com/samuxlh"><span>/samuxlh</span></a>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1em' }}>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/nemtentomais/"><i className="fab fa-instagram fa-3x"></i></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/nemtentomais/"><span>/nemtentomais</span></a>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1em' }}>
                     <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/vvssam"><i className="fab fa-twitch fa-3x"></i></a>
                     <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/vvssam"><span>/vvssam</span></a>
                 </div>
