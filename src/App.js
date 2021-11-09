@@ -69,9 +69,9 @@ function App() {
         <div className="alternativeFont">
           <ul className="headerLinkList">
             <li className="menuLink" onClick={() => setTabActive(0)}><Link className="ID001" to="/">Home</Link></li>
-            <li className="menuLink" onClick={() => setTabActive(1)}><Link className="ID001" to="/about">Who am I?</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(1)}><Link className="ID001" to="/about">About Me</Link></li>
             <li className="menuLink" onClick={() => setTabActive(2)}><Link className="ID001" to="/projects">My Projects</Link></li>
-            <li className="menuLink" onClick={() => setTabActive(3)}><Link className="ID001" to="/contact">Wanna contact me?</Link></li>
+            <li className="menuLink" onClick={() => setTabActive(3)}><Link className="ID001" to="/contact">Contact</Link></li>
             
           </ul>
         </div>

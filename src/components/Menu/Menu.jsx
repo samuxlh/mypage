@@ -11,9 +11,9 @@ function Header() {
                 <div className="alternativeFont">
                     <ul className="headerLinkList">
                         <li className="menuLink"><Link to="/">Home</Link></li>
-                        <li className="menuLink"><Link to="/about">Who am I?</Link></li>
+                        <li className="menuLink"><Link to="/about">About Me</Link></li>
                         <li className="menuLink"><Link to="/projects">My Projects</Link></li>
-                        <li className="menuLink"><Link to="/contact">Wanna contact me?</Link></li>
+                        <li className="menuLink"><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </header>
