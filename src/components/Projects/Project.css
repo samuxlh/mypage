@@ -39,6 +39,7 @@
     justify-content: space-around;
     align-items: center;
     transition: all .5s cubic-bezier(.24, .01, .71, 1);
+    cursor: pointer;
 }
 
 .projectBox:hover {
