@@ -9,7 +9,7 @@ function Project() {
         <div className="ProjectRoot">
             <section className="textFont">
                 <div className="ProjectBoard">
-                    <p>There are some other projects, but I can't share them right now. 🤫</p>
+                    <p>These are only commercial projects I've worked on, most of my personal projects can be found <a className="animatedLink" href="https://github.com/samuxlh?tab=repositories">here</a>.</p>
                     <div className="projectBox alternativeFont" onClick={()=>window.open('https://caramelovem.com.br/')} title='Click to see!'>
                         <img src={CarameloIMG} alt='Caramelo' className="thumb" />
                         <div className="projectCard">
