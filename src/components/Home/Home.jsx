@@ -1,15 +1,23 @@
 import React from 'react';
 import "./Home.css"
-import Typist from 'react-typist';
+import pp from '../../img/pp.jpg'
 function Home() {
     return (
         <div>
             <span>
-            <p className="textFont defaultText">Welcome to my page, my name is</p>
-            <h1 className="titleFont bigText"><Typist cursor={{ hideWhenDone: true }}>Samuel Santos</Typist></h1>
-            <p className="textFont defaultText">But you can call me Sam if you want to.</p>
-            <p className="textFont defaultText">I like React, Python, games, cybersec and data science. You can find more info using the bar on top...</p>
+                <p className="textFont bigText">Hello! My name is Sam.</p>
+                <p className="textFont bigText">I am a 22 years old developer from Brazil currently working for Vortx DTVM as Data Engineer Intern.</p>
+                <p className="textFont bigText">I love working with Python, NodeJS, and AWS to deliver on-demand escalable web services.</p>
             </span>
+            <div style={{ display: 'flex' }}>
+                <img style={{ width: '420px', borderRadius: '32px' }} src={pp} alt='Sam smiling at his table.'></img>
+                <ul>
+                    <li className="menuLinkLeft textFont a24pxfont listItem"><a target="_blank" rel="noreferrer" href="https://github.com/samuxlh"><i className="fab fa-github fa-2x"></i></a>Github</li>
+                    <li className="menuLinkLeft textFont a24pxfont listItem"><i className="fab fa-linkedin fa-2x"></i>LinkedIn</li>
+                    <li className="menuLinkLeft textFont a24pxfont listItem"><i className="far fa-envelope fa-2x"></i>Email me</li>
+                </ul>
+            </div>
+
         </div>
     )
 }

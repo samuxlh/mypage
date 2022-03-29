@@ -20,13 +20,13 @@ body {
 }
 
 .defaultContainer {
-    width: 80%;
-    height: fit-content;
+    width: 50%;
+    height: 80vh;
     margin: 3em auto;
     padding: 1em;
-    border: var(--purple) solid 1px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5)
+    /* border: var(--purple) solid 1px; */
+    /* border-radius: 5px; */
+    /* background-color: rgba(0, 0, 0, 0.5) */
 }
 
 .alignCenter {
@@ -38,21 +38,25 @@ body {
 /* 1.1 Fonts/Text Formatting */
 
 .titleFont {
-    font-family: 'Yantramanav', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     letter-spacing: 0.1em;
     color: var(--white);
 }
 
 .textFont {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 0.1em;
     color: var(--white);
 }
 
 .alternativeFont {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 0.1em;
     color: var(--white);
+}
+
+.a24pxfont{
+    font-size: 24px;
 }
 
 a {
@@ -65,13 +69,19 @@ a {
 
 body {
     padding: 0;
-    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./img/background.svg");
+    background: linear-gradient( rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url("./img/background.jpg");
     background-repeat: repeat;
     background-size: cover;
 }
 
 
 /* Menu Formatting */
+
+.floatingMenu{
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
 
 ul {
     list-style-type: none;
@@ -85,29 +95,24 @@ header {
 
 .headerLinkList {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     letter-spacing: .1em;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
 }
 
 .menuLink {
     margin: 1em;
     text-align: center;
 }
-
-.menuLink::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: var(--white);
-    transition: width .1s;
-}
-
-.menuLink:hover::after {
-    width: 100%;
-    height: 1px;
-    background: var(--white);
-    transition: width .1s;
+.menuLinkLeft {
+    margin: 1em;
+    text-align: left;
+    cursor: pointer;
 }
 
 .menuLink-active {
