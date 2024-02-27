@@ -203,7 +203,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  I've automated data processing into a secure, well-organized dashboard using NodeJS/Python/AWS Lambda.{" "}
+                  I`ve automated data processing into a secure, well-organized dashboard using NodeJS/Python/AWS Lambda.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -267,7 +267,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I've worked in a collaborative agile enviroment. Developed webpages frontend to back working mostly with ReactJS/NodeJS.{" "}
+                    I`ve worked in a collaborative agile enviroment. Developed webpages frontend to back working mostly with ReactJS/NodeJS.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
