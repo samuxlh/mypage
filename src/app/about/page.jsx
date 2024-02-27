@@ -2,10 +2,13 @@
 import Brain from "@/components/brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 
 const AboutPage = () => {
   const containerRef = useRef();
+
+  const text = "What can I do?";
 
   const { scrollYProgress } = useScroll({ container: containerRef });
 
@@ -203,7 +206,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  I`ve automated data processing into a secure, well-organized dashboard using NodeJS/Python/AWS Lambda.{" "}
+                    I`ve automated data processing into a secure, well-organized dashboard using NodeJS/Python/AWS Lambda.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -245,7 +248,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                  I centralized legacy and new APIs onto a single DataLake using serverless architecture, integrating diverse data manipulation processes and validating with internal APIs.{" "}
+                    I centralized legacy and new APIs onto a single DataLake using serverless architecture, integrating diverse data manipulation processes and validating with internal APIs.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -290,6 +293,23 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
             </motion.div>
+          <Link href="/portfolio">
+            <div className="text-2xl pt-16">
+              {text.split("").map((letter, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                  }}
+                >
+                  {letter}
+                </motion.span>
+              ))}
+            </div>
+          </Link>
           </div>
         </div>
         {/* SVG CONTAINER */}

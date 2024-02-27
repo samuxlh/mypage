@@ -6,7 +6,7 @@ import NavLink from "../components/navLink";
 import { motion } from "framer-motion";
 
 const Homepage = () => {
-  const text = "Click here to begin...";
+  const text = "Who am I?";
 
   return (
     <motion.div
@@ -23,10 +23,6 @@ const Homepage = () => {
             Curating Virtual Experiences, Imagining the Future
           </h1>
           {/* DESC */}
-          <p className="md:text-xl">
-            Hello! Welcome to my page.
-            You can explore more about my journey and areas of expertise using the menu.
-          </p>
           <Link href="/about">
           <div className="text-3xl">
             {text.split("").map((letter, index) => (
