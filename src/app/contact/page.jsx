@@ -69,7 +69,7 @@ const ContactPage = () => {
         >
           <span>Hello Sam,</span>
           <textarea
-            placeholder="This is where the message goes :)"
+            placeholder="I wanted to talk to you about stuff..."
             rows={2}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
