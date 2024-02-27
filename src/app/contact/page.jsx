@@ -43,7 +43,7 @@ const ContactPage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="h-1/2 lg:h-full lg:w-5/6 flex items-center justify-center text-6xl m-2">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -65,11 +65,12 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-4/6 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-5/6 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-12 :mt-64"
         >
           <span>Hello Sam,</span>
           <textarea
-            rows={6}
+            placeholder="This is where the message goes :)"
+            rows={2}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
@@ -78,6 +79,7 @@ const ContactPage = () => {
             name="user_email"
             type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="person@email.com"
           />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
@@ -85,7 +87,7 @@ const ContactPage = () => {
           </button>
           {success && (
             <span className="text-green-600 font-semibold">
-              Your message has been sent successfully!
+              Your message has been sent!
             </span>
           )}
           {error && (
