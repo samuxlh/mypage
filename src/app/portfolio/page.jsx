@@ -35,7 +35,7 @@ const items = [
     title: "Github",
     desc: "Contains many projects I've worked on such as Java applications, Python Automations, Bash Scripts, etc.",
     img: "https://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png",
-    link: "https://github.com/samuxlh",
+    link: "https://github.com/samuel-cezar",
   },
 ];
 
