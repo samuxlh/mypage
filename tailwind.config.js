@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaulTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +10,7 @@ module.exports = {
   theme: {
     screens: {
       'xs': {'max': '400px'},
+      ...defaulTheme.screens
     },
     extend: {
       backgroundImage: {

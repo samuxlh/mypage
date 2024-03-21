@@ -13,7 +13,6 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
-  // const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
   const experienceRef = useRef();
@@ -26,11 +25,8 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex overflow-x-hidden" ref={containerRef}>
-        {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
-          {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
@@ -71,7 +67,6 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* SKILLS CONTAINER */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
@@ -80,7 +75,7 @@ const AboutPage = () => {
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
             >
-              SKILLS
+              STACK
             </motion.h1>
             {/* SKILL LIST */}
             <motion.div
@@ -176,12 +171,10 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48 text-xs"
+            className="flex flex-col gap-12 justify-center pb-16 text-xs"
             ref={experienceRef}
           >
-            {/* EXPERIENCE TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
@@ -190,7 +183,6 @@ const AboutPage = () => {
             >
               EXPERIENCE
             </motion.h1>
-            {/* EXPERIENCE LIST */}
             <motion.div
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
@@ -202,11 +194,11 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Microservices Developer
+                    Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I`ve automated data processing into a secure, well-organized dashboard using NodeJS/Python/AWS Lambda.{" "}
+                    I've worked improving many of the internal processes, working mostly with NodeJS, Next, Python, Docker and AWS Lambda.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -244,7 +236,7 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Backend Developer
+                    Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
@@ -266,11 +258,11 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Web Fullstack Developer{" "}
+                    Fullstack Developer{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I`ve worked in a collaborative agile enviroment. Developed webpages frontend to back working mostly with ReactJS/NodeJS.{" "}
+                    I've worked in a collaborative agile enviroment. Developed webpages frontend to back working mostly with ReactJS, NodeJS.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -293,7 +285,7 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
             </motion.div>
-            <div className="text-2xl mb-5 text-center">
+            <div className="mt-32 xs:mt-60 sm:mt-12 lg:mt-6 xl:pt-36 text-2xl mb-5 text-center">
                 <Link href="/portfolio">
                   {text.split("").map((letter, index) => (
                     <motion.span
@@ -312,10 +304,9 @@ const AboutPage = () => {
               </div>
           </div>
         </div>
-        {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+        {/* <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
           <Brain scrollYProgress={scrollYProgress} />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
