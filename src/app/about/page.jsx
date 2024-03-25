@@ -30,7 +30,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image
-              src="https://i.ibb.co/MnNyPXN/me.png"
+              src="https://media.licdn.com/dms/image/D4D03AQG7k7fIN6DdAQ/profile-displayphoto-shrink_800_800/0/1711383458410?e=1717027200&v=beta&t=Crnb8LbiYc7SV2IgOAcVUWSQwSCOxSGeL7M2JsDKWeg"
               alt=""
               width={120}
               height={120}
