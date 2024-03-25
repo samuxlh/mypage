@@ -25,7 +25,10 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll lg:flex overflow-x-hidden" ref={containerRef}>
+      <div
+        className="h-full overflow-scroll lg:flex overflow-x-hidden"
+        ref={containerRef}
+      >
         <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -40,8 +43,11 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Experienced programmer with a strong background in software development, specializing in Javascript.
-              My goal is to deepen my expertise in development while cultivating leadership skills through dedicated study, hands-on work, and continuous learning in the field.
+              Experienced programmer with a strong background in software
+              development, specializing in Javascript. My goal is to deepen my
+              expertise in development while cultivating leadership skills
+              through dedicated study, hands-on work, and continuous learning in
+              the field.
             </p>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
@@ -96,13 +102,22 @@ const AboutPage = () => {
                 Git
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React.js
+                Jquery
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Bootstrap
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next.js
+                React
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Next
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Node
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Express
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
@@ -111,40 +126,19 @@ const AboutPage = () => {
                 PostgreSQL
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
+                SQL Server
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Responsive Web Design
+                Firebase
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Serverless
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                ETL Processes
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Web Scraping
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Docker
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Microservices
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS Lambda
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS RDS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS S3
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Firebase
+                AWS (Lambda, RDS, S3, SQS)
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -189,28 +183,32 @@ const AboutPage = () => {
               className=""
             >
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-48 xs:h-fit xs:text-center">
                 {/* LEFT */}
-                <div className="w-1/3 ">
+                <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Developer
+                    FP&A Solutions Developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I`ve worked improving many of the internal processes, working mostly with NodeJS, Next, Python, Docker and AWS Lambda.{" "}
+                  <div className="p-3 text-xs italic xs:p-0 xs:pt-3">
+                    I focused on backend development using NodeJS and Express,
+                    paired with low-code frontend development. I specialized in
+                    microservice development with Node, Serverless, and Lambda,
+                    and implemented automation routines using Python, Pandas, and
+                    SQL within AWS{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-purple-600 text-sm font-semibold">
                     2022 - 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Vortx DTVM
+                    Vortx
                   </div>
                 </div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="w-1/6 flex justify-center xs:d">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -221,9 +219,9 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-48 sm:h-fit xs:h-fit xs:text-center">
                 {/* LEFT */}
-                <div className="w-1/3 "></div>
+                <div className="w-1/3"></div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
                   {/* LINE */}
@@ -233,44 +231,51 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 ">
+                <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Developer
+                    Prod&Tech Full-Stack Developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I centralized legacy and new APIs onto a single DataLake using serverless architecture, integrating diverse data manipulation processes and validating with internal APIs.{" "}
+                  <div className="p-3 text-xs italic xs:p-0 xs:pt-3">
+                    I engaged in full-stack development with React, NextJS and
+                    ExpressJS, alongside microservices using Node, Serverless,
+                    and Docker. I managed database tasks with Python and Pandas
+                    in MS Azure, working with SQL Server, Boards, Power BI, and
+                    Sharepoint.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-purple-600 text-sm font-semibold">
                     2021 - 2022{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Vortx DTVM
+                    Vortx
                   </div>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-48 sm:h-fit xs:h-fit xs:text-center">
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Fullstack Developer{" "}
+                    Full-Stack Developer{" "}
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I`ve worked in a collaborative agile enviroment. Developed webpages frontend to back working mostly with ReactJS, NodeJS.{" "}
+                  <div className="p-3 text-xs italic xs:p-0 xs:pt-3">
+                    I handled full-stack development using React and Node, while
+                    also executing database manipulation tasks with Python and
+                    Pandas. Additionally, I contributed to legacy backend
+                    maintenance, particularly in the .Net framework.{" "}
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-purple-600 text-sm font-semibold">
                     2020 - 2021{" "}
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Yankton Tech
+                    Yankton
                   </div>
                 </div>
                 {/* CENTER */}
@@ -285,23 +290,23 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
             </motion.div>
-            <div className="mt-32 xs:mt-60 sm:mt-12 lg:mt-6 xl:pt-36 text-2xl mb-5 text-center">
-                <Link href="/portfolio">
-                  {text.split("").map((letter, index) => (
-                    <motion.span
-                      key={index}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        duration: 1,
-                        repeat: Infinity,
-                      }}
-                    >
-                      {letter}
-                    </motion.span>
-                  ))}
-                </Link>
-              </div>
+            <div className="mt-32 xs:mt-12 sm:mt-12 lg:mt-6 xl:pt-6 text-2xl mb-5 text-center">
+              <Link href="/portfolio">
+                {text.split("").map((letter, index) => (
+                  <motion.span
+                    key={index}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                      duration: 1,
+                      repeat: Infinity,
+                    }}
+                  >
+                    {letter}
+                  </motion.span>
+                ))}
+              </Link>
+            </div>
           </div>
         </div>
         {/* <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
